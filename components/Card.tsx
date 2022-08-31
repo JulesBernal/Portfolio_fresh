@@ -61,6 +61,7 @@ export function Card(props:PageProps/*{project}: PageProps<Project | null>*/) {
                     <p>repo</p>
                     <img src='' width={64} height={64} />
                 </a>
+                <img src="./ecom.png"></img>
             </div>
         </div>
     </div>

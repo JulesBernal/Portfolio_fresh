@@ -22,7 +22,7 @@ interface Data {
 
 export function ContactForm() {
   return (
-    <form class={tw`w-full max-w-lg mx-auto`}>
+    <form class={tw`w-full max-w-lg mx-auto`} id='contact'>
         <div class={tw`flex flex-wrap -mx-3 mb-6`}>
             <div class={tw`w-full md:w-1/2 px-3 mb-6 md:mb-0`}>
             <label class={tw`block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2`} for="grid-first-name" Required>

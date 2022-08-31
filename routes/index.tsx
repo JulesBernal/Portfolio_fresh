@@ -29,18 +29,21 @@ export const handler: Handlers = {
 export default function Home(project:PageProps) {
   return (
     <main class={tw`p-4 mx-auto max-w-screen-md  bg-blue-600`}>
-      <img
+      {/* <img
         src="/logo.svg"
         height="100px"
         alt="the fresh logo: a sliced lemon dripping with juice"
-      />
+      /> */}
       {/* <Counter start={3} /> */}
      
       {/* <Cards />
       <p class={tw`my-6`}>
         
       </p> */}
-      <article class={tw`grid grid-cols-2 gap-4`}>
+      <article>
+        <h1 class={tw`text-6xl`}>Jules Bernal Benitez</h1>
+      </article>
+      <article id='project' class={tw`grid grid-cols-2 gap-4`}>
       {project?.data &&(project.data.projects.map((project:any)=>{
         return(
         <Card data={project}/>)

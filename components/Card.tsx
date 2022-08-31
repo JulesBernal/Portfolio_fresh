@@ -30,7 +30,7 @@ export function Card(props:PageProps/*{project}: PageProps<Project | null>*/) {
         return <h1>User not found</h1>;
       }
       const box = (<div><img src={props.data.img}
-      class={tw `w-auto rounded-lg`} 
+      class={tw `w-auto rounded-lg outline-black`} 
       blur-shadow-image="true" />
   <h1 class={tw `font-semibold`}>{props.data.name}</h1>
   <p class={tw`opacity-60 mb-4`}>{props.data.description}</p> </div>)
@@ -46,7 +46,8 @@ export function Card(props:PageProps/*{project}: PageProps<Project | null>*/) {
                 </a>
                 
                 ) :  <div>
-                <Fishing />
+                <Fishing/>
+                <div class={tw`pt-20`}></div>
                 {box}</div>  }
                 
                 <a href={props.data.repo}>

@@ -19,6 +19,7 @@ export const handler: Handlers = {
     const project = await resp.json();
     return ctx.render(project);
   },
+  //a comment
   async POST(req) {
     const res = await fetch(`https://fishing-game-api.herokuapp.com/`);
     if (res.status === 404) {

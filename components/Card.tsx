@@ -35,22 +35,14 @@ export function Card(props:PageProps/*{project}: PageProps<Project | null>*/) {
   <h1 class={tw `font-semibold`}>{props.data.name}</h1>
   <p class={tw`opacity-60 mb-4`}>{props.data.description}</p> </div>)
   return (
-    // {props.data? && () project}
     <div  class={tw ` from-pink-200 via-pink-400 to-pink-600 bg-gradient-to-br pb-10`}
     >   
-        <div class={tw `relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16`}
+        <div class={tw `relative max-w-md mx-auto xl:max-w-2xl min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16 h-200`}
         >
-            <div class={tw `mx-4 -mt-6`}>
+            <div class={tw `mx-4 -mt-6 h-96`}>
                 {props?.data.url ?(
-                    // <Fishing />
                     <a href={props.data.url}>
                         {box}
-                    {/* <img src={props.data.img}
-                        class={tw `w-auto rounded-lg`} 
-                        blur-shadow-image="true" />
-                    <h1>{props.data.name}</h1>
-                    <p>{props.data.description}</p> */}
-                    <p>hi</p>
                 </a>
                 
                 ) :  <div>
@@ -58,8 +50,7 @@ export function Card(props:PageProps/*{project}: PageProps<Project | null>*/) {
                 {box}</div>  }
                 
                 <a href={props.data.repo}>
-                    <p>repo</p>
-                    <img src='' width={64} height={64} />
+                    <img src='/logo-github.svg' width={64} height={64} />
                 </a>
             </div>
         </div>

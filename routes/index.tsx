@@ -4,12 +4,9 @@ import { tw } from "@twind";
 import Counter from "../islands/Counter.tsx";
 import { ContactForm } from "../components/ContactForm.tsx";
 import { Card } from "../components/Card.tsx";
-import {Cards} from "../components/Cards.tsx";
-// import {Fish} from "../components/Fish.tsx";
 import { Handlers, PageProps } from "$fresh/server.ts";
-// import Fishing from "../islands/Fishing.tsx"
 import { render } from "https://deno.land/x/fresh@1.0.2/src/server/render.tsx";
-
+import {Footer} from  "../components/Footer.tsx"
 export const handler: Handlers = {
   async GET(_,ctx) {
     const resp = await fetch(`https://portfoliojb-api.herokuapp.com/`);
@@ -52,6 +49,7 @@ export default function Home(project:PageProps) {
       </article>
 
       <ContactForm />
+      <Footer />
     </main>
   );
 }

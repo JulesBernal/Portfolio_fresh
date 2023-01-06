@@ -9,7 +9,7 @@ import { render } from "https://deno.land/x/fresh@1.0.2/src/server/render.tsx";
 import {Footer} from  "../components/Footer.tsx"
 export const handler: Handlers = {
   async GET(_,ctx) {
-    const resp = await fetch(`https://portfoliojb-api.herokuapp.com/`);
+    const resp = await fetch(`https://portfolio-api-mocha.vercel.app/`);
     if (resp.status === 404) {
       return ctx.render(null);
     }

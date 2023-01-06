@@ -18,7 +18,7 @@ export const handler: Handlers = {
   },
   //a comment
   async POST(req) {
-    const res = await fetch(`https://fishing-game-api.herokuapp.com/`);
+    const res = await fetch(`https://fishing-game-julesbernal.vercel.app/`);
     if (res.status === 404) {
       return new Response(null,{status:404});
     }
